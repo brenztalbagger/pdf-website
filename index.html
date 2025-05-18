@@ -2,13 +2,25 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>PDF Anzeige</title>
+  <title>Mein Bild</title>
   <style>
-    body, html { margin:0; height:100vh; }
-    embed { width:100%; height:100%; }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
-  <embed src="meine-datei.pdf" type="application/pdf" />
+  <img src="bild.png" alt="Mein Bild" />
 </body>
 </html>

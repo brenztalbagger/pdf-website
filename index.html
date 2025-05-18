@@ -6,6 +6,7 @@
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -18,21 +19,23 @@
       border: 2px solid #ccc;
       border-radius: 10px;
     }
+    .impressum-link {
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+    .impressum-link a {
+      text-decoration: none;
+      color: #333;
+    }
+    .impressum-link a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <img src="bild.png" alt="Mein Bild" />
+  <p class="impressum-link">
+    <a href="impressum.html">Impressum</a>
+  </p>
 </body>
 </html>
-
-
---
-
-<p><a href="impressum.html">Impressum</a></p>
-
---
-
-<p style="text-align:center; font-size: 0.9em;">
-  <a href="impressum.html">Impressum</a>
-</p>
-

@@ -3,15 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Brenztalbagger</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.8);
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#000;">
 
-  <img src="Bild26.png" alt="Bild" style="max-width:100%; height:auto;">
+<body>
 
+  <div class="content">
+    <img src="Bild26.png" alt="Brenztalbagger">
+  </div>
 
-  <div style="text-align:center; margin-top:20px;">
-  <a href="impressum.html">Impressum</a>
-</div>
+  <footer>
+    <a href="impressum.html">Impressum</a>
+  </footer>
 
 </body>
 </html>

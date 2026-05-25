@@ -8,12 +8,18 @@
     body {
       margin: 0;
       background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      align-items: center;
     }
 
-    .content {
+    .image-container {
       flex: 1;
       display: flex;
       justify-content: center;
@@ -26,6 +32,7 @@
     }
 
     footer {
+      width: 100%;
       text-align: center;
       padding: 15px;
       background: rgba(0,0,0,0.8);
@@ -34,7 +41,6 @@
     a {
       color: white;
       text-decoration: none;
-      font-family: Arial, sans-serif;
     }
 
     a:hover {
@@ -45,13 +51,17 @@
 
 <body>
 
-  <div class="content">
-    <img src="Bild26.png" alt="Brenztalbagger">
-  </div>
+  <div class="wrapper">
 
-  <footer>
-    <a href="impressum.html">Impressum</a>
-  </footer>
+    <div class="image-container">
+      <img src="Bild26.png" alt="Brenztalbagger">
+    </div>
+
+    <footer>
+      <a href="impressum.html">Impressum</a>
+    </footer>
+
+  </div>
 
 </body>
 </html>

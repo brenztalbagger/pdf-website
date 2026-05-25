@@ -36,7 +36,7 @@
 
     footer {
       text-align: center;
-      padding: 14px;
+      padding: 12px;
       background: rgba(0,0,0,0.85);
     }
 
@@ -46,22 +46,37 @@
       font-size: 16px;
     }
 
-    a:hover {
-      text-decoration: underline;
+    /* 🔥 FIXE BUTTONS */
+    .btn-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      z-index: 999;
     }
 
-    /* 📱 MOBILE OPTIMIERUNG */
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+
+    .call {
+      background: #e53935;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    /* 📱 MOBILE */
     @media (max-width: 600px) {
       img {
         max-height: 65vh;
-      }
-
-      footer {
-        padding: 18px;
-      }
-
-      a {
-        font-size: 18px;
       }
     }
   </style>
@@ -79,6 +94,12 @@
       <a href="impressum.html">Impressum</a>
     </footer>
 
+  </div>
+
+  <!-- 🔥 FIXE BUTTONS -->
+  <div class="btn-bar">
+    <a class="btn call" href="tel:+49123456789">📞 Anrufen</a>
+    <a class="btn whatsapp" href="https://wa.me/49123456789" target="_blank">💬 WhatsApp</a>
   </div>
 
 </body>
